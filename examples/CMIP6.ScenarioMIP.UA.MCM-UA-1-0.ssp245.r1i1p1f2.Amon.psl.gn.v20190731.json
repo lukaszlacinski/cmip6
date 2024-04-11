@@ -1,0 +1,100 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://cedadev.github.io/cmip6/v0.1.0/schema.json"
+  ],
+  "id": "CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731",
+  "collection": "cmip6",
+  "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+          [
+              [-180.0, -88.28837585449219],
+              [176.25, -88.28837585449219],
+              [176.25, 88.28837585449219],
+              [-180.0, 88.28837585449219],
+              [-180.0, -88.28837585449219]
+          ]
+      ]
+  },
+  "bbox": [-180.0, -88.28837585449219, 176.25, 88.28837585449219],
+  "properties": {
+      "datetime": "2058-01-01T00:00:00Z",
+      "start_datetime": "2015-01-17T00:00:00Z",
+      "end_datetime": "2100-12-17T00:00:00Z",
+      "cmip6:access": ["HTTPServer"],
+      "cmip6:index_node": null,
+      "cmip6:latest": true,
+      "cmip6:pid": null,
+      "cmip6:replica": false,
+      "cmip6:retracted": false,
+      "cmip6:instance_id": "CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731",
+      "cmip6:citation_url": "http://cera-www.dkrz.de/WDCC/meta/CMIP6/CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731.json",
+      "cmip6:variable_long_name": "Sea Level Pressure",
+      "cmip6:variable_units": "Pa",
+      "cmip6:cf_standard_name": "air_pressure_at_mean_sea_level",
+      "cmip6:activity_id": "ScenarioMIP",
+      "cmip6:data_specs_version": "01.00.28",
+      "cmip6:experiment_title": "update of RCP4.5 based on SSP2",
+      "cmip6:frequency": "mon",
+      "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.UA.MCM-UA-1-0.ssp245.none.r1i1p1f2",
+      "cmip6:grid": "lat-lon",
+      "cmip6:grid_label": "gn",
+      "cmip6:institution_id": "UA",
+      "cmip6:mip_era": "CMIP6",
+      "cmip6:source_id": "MCM-UA-1-0",
+      "cmip6:source_type": "AOGCM",
+      "cmip6:experiment_id": "ssp245",
+      "cmip6:sub_experiment_id": "none",
+      "cmip6:nominal_resolution": "250 km",
+      "cmip6:table_id": "Amon",
+      "cmip6:variable_id": "psl",
+      "cmip6:variant_label": "r1i1p1f2",
+      "cmip6:levels": null,
+      "cmip6:updated": "2024-02-20T19:28:19.804842Z",
+      "cmip6:created": "2024-02-20T19:28:19.804842Z"
+  },
+  "links": [
+      {
+          "rel": "self",
+          "type": "application/geo+json",
+          "href": "https://api.stac.ceda.ac.uk/collections/cmip6/items/CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731"
+      },
+      {
+          "rel": "parent",
+          "type": "application/json",
+          "href": "https://api.stac.ceda.ac.uk/collections/cmip6"
+      },
+      {
+          "rel": "collection",
+          "type": "application/json",
+          "href": "https://api.stac.ceda.ac.uk/collections/cmip6"
+      },
+      {
+          "rel": "root",
+          "type": "application/json",
+          "href": "https://api.stac.ceda.ac.uk/"
+      }
+  ],
+  "assets": {
+      "reference_file": {
+          "checksum": null,
+          "checksum_type": null,
+          "href": "https://dap.ceda.ac.uk/badc/cmip6/metadata/kerchunk/pipeline1/ScenarioMIP/UA/MCM-UA-1-0/kr1.0/CMIP6_ScenarioMIP_UA_MCM-UA-1-0_ssp245_r1i1p1f2_Amon_psl_gn_v20190731_kr1.0.json",
+          "roles": ["reference", "data"],
+          "size": null,
+          "type": "application/zstd",
+          "open_zarr_kwargs": {"decode_times": true}
+      },
+      "data0001": {
+          "href": "https://dap.ceda.ac.uk/badc/cmip6/data/CMIP6/ScenarioMIP/UA/MCM-UA-1-0/ssp245/r1i1p1f2/Amon/psl/gn/v20190731/psl_Amon_MCM-UA-1-0_ssp245_r1i1p1f2_gn_201501-210012.nc",
+          "roles": ["data"],
+          "checksum": null,
+          "checksum_type": null,
+          "type": "application/netcdf",
+          "time": "2015-01-01T00:00:00/2100-12-31T23:59:59",
+          "area": [-180.0, -88.28837585449219, 176.25, 88.28837585449219]
+      }
+  }
+}

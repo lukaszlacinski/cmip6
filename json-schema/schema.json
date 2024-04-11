@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://stac-extensions.github.io/template/v1.0.0/schema.json#",
-  "title": "Template Extension",
-  "description": "STAC Template Extension for STAC Items and STAC Collections.",
+  "$id": "https://cedadev.github.io/cmip6/v0.1.0/schema.json#",
+  "title": "CMIP6 Extension",
+  "description": "STAC CMIP6 Extension for STAC Items and STAC Collection Summaries.",
   "oneOf": [
     {
-      "$comment": "This is the schema for STAC Items. Remove this object if this extension only applies to Collections.",
+      "$comment": "This is the schema for STAC Items.",
       "allOf": [
         {
           "$ref": "#/definitions/stac_extensions"
@@ -14,8 +14,7 @@
           "type": "object",
           "required": [
             "type",
-            "properties",
-            "assets"
+            "properties"
           ],
           "properties": {
             "type": {
@@ -24,118 +23,12 @@
             "properties": {
               "allOf": [
                 {
-                  "$comment": "Require fields here for Item Properties.",
-                  "required": [
-                    "template:new_field"
-                  ]
+                  "$ref": "#/definitions/require_any"
                 },
                 {
                   "$ref": "#/definitions/fields"
                 }
               ]
-            },
-            "assets": {
-              "$comment": "This validates the fields in Item Assets, but does not require them.",
-              "type": "object",
-              "additionalProperties": {
-                "$ref": "#/definitions/fields"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "$comment": "This is the schema for STAC Collections.",
-      "type": "object",
-      "allOf": [
-        {
-          "required": [
-            "type"
-          ],
-          "properties": {
-            "type": {
-              "const": "Collection"
-            }
-          }
-        },
-        {
-          "$ref": "#/definitions/stac_extensions"
-        }
-      ],
-      "anyOf": [
-        {
-          "$comment": "This is the schema for the top-level fields in a Collection. Remove this if this extension does not define top-level fields for Collections.",
-          "allOf": [
-            {
-              "$comment": "Require fields here for Collections (top-level).",
-              "required": [
-                "template:new_field"
-              ]
-            },
-            {
-              "$ref": "#/definitions/fields"
-            }
-          ]
-        },
-        {
-          "$comment": "This validates the fields in Collection Assets, but does not require them.",
-          "required": [
-            "assets"
-          ],
-          "properties": {
-            "assets": {
-              "type": "object",
-              "not": {
-                "additionalProperties": {
-                  "not": {
-                    "allOf": [
-                      {
-                        "$ref": "#/definitions/require_any_field"
-                      },
-                      {
-                        "$ref": "#/definitions/fields"
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        },
-        {
-          "$comment": "This is the schema for the fields in Item Asset Definitions. It doesn't require any fields.",
-          "required": [
-            "item_assets"
-          ],
-          "properties": {
-            "item_assets": {
-              "type": "object",
-              "not": {
-                "additionalProperties": {
-                  "not": {
-                    "allOf": [
-                      {
-                        "$ref": "#/definitions/require_any_field"
-                      },
-                      {
-                        "$ref": "#/definitions/fields"
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        },
-        {
-          "$comment": "This is the schema for the fields in Summaries. By default, only checks the existence of the properties, but not the schema of the summaries.",
-          "required": [
-            "summaries"
-          ],
-          "properties": {
-            "summaries": {
-              "$ref": "#/definitions/require_any_field"
             }
           }
         }
@@ -152,7 +45,7 @@
         "stac_extensions": {
           "type": "array",
           "contains": {
-            "const": "https://stac-extensions.github.io/template/v1.0.0/schema.json"
+            "const": "https://stac-extensions.github.io/cmip6/v1.0.0/schema.json"
           }
         }
       }
@@ -160,48 +53,139 @@
     "require_any_field": {
       "$comment": "Please list all fields here so that we can force the existence of one of them in other parts of the schemas.",
       "anyOf": [
-        {"required": ["template:new_field"]},
-        {"required": ["template:xyz"]},
-        {"required": ["template:another_one"]}
+        {"required": ["cmip6:access"]},
+        {"required": ["cmip6:index_node"]},
+        {"required": ["cmip6:latest"]},
+        {"required": ["cmip6:pid"]},
+        {"required": ["cmip6:replica"]},
+        {"required": ["cmip6:retracted"]},
+        {"required": ["cmip6:instance_id"]},
+        {"required": ["cmip6:citation_url"]},
+        {"required": ["cmip6:variable_long_name"]},
+        {"required": ["cmip6:variable_units"]},
+        {"required": ["cmip6:cf_standard_name"]},
+        {"required": ["cmip6:activity_id"]},
+        {"required": ["cmip6:data_specs_version"]},
+        {"required": ["cmip6:experiment_title"]},
+        {"required": ["cmip6:frequency"]},
+        {"required": ["cmip6:further_info_url"]},
+        {"required": ["cmip6:grid"]},
+        {"required": ["cmip6:grid_label"]},
+        {"required": ["cmip6:institution_id"]},
+        {"required": ["cmip6:mip_era"]},
+        {"required": ["cmip6:source_id"]},
+        {"required": ["cmip6:source_type"]},
+        {"required": ["cmip6:experiment_id"]},
+        {"required": ["cmip6:sub_experiment_id"]},
+        {"required": ["cmip6:nominal_resolution"]},
+        {"required": ["cmip6:table_id"]},
+        {"required": ["cmip6:variable_id"]},
+        {"required": ["cmip6:variant_label"]},
+        {"required": ["cmip6:levels"]},
+        {"required": ["cmip6:updated"]},
+        {"required": ["cmip6:created"]}
       ]
     },
     "fields": {
-      "$comment": "Add your new fields here. Don't require them here, do that above in the corresponding schema.",
+      "$comment": " Don't require fields here, do that above in the corresponding schema.",
       "type": "object",
       "properties": {
-        "template:new_field": {
+        "cmip6:access": {
+          "type": "array"
+        },
+        "cmip6:index_node": {
           "type": "string"
         },
-        "template:xyz": {
-          "type": "object",
-          "required": [
-            "x",
-            "y",
-            "z"
-          ],
-          "properties": {
-            "x": {
-              "type": "number"
-            },
-            "y": {
-              "type": "number"
-            },
-            "z": {
-              "type": "number"
-            }
-          }
+        "cmip6:latest": {
+          "type": "boolean"
         },
-        "template:another_one": {
-          "type": "array",
-          "items": {
-            "type": "number"
-          }
+        "cmip6:pid": {
+          "type": "string"
+        },
+        "cmip6:replica": {
+          "type": "boolean"
+        },
+        "cmip6:retracted": {
+          "type": "boolean"
+        },
+        "cmip6:instance_id": {
+          "type": "string"
+        },
+        "cmip6:citation_url": {
+          "type": "string"
+        },
+        "cmip6:variable_long_name": {
+          "type": "string"
+        },
+        "cmip6:variable_units": {
+          "type": "string"
+        },
+        "cmip6:cf_standard_name": {
+          "type": "string"
+        },
+        "cmip6:activity_id": {
+          "type": "string"
+        },
+        "cmip6:data_specs_version": {
+          "type": "string"
+        },
+        "cmip6:experiment_title": {
+          "type": "string"
+        },
+        "cmip6:frequency": {
+          "type": "string"
+        },
+        "cmip6:further_info_url": {
+          "type": "string"
+        },
+        "cmip6:grid": {
+          "type": "string"
+        },
+        "cmip6:grid_label": {
+          "type": "string"
+        },
+        "cmip6:institution_id": {
+          "type": "string"
+        },
+        "cmip6:mip_era": {
+          "type": "string"
+        },
+        "cmip6:source_id": {
+          "type": "string"
+        },
+        "cmip6:source_type": {
+          "type": "string"
+        },
+        "cmip6:experiment_id": {
+          "type": "string"
+        },
+        "cmip6:sub_experiment_id": {
+          "type": "string"
+        },
+        "cmip6:nominal_resolution": {
+          "type": "string"
+        },
+        "cmip6:table_id": {
+          "type": "string"
+        },
+        "cmip6:variable_id": {
+          "type": "string"
+        },
+        "cmip6:variant_label": {
+          "type": "string"
+        },
+        "cmip6:levels": {
+          "type": "string"
+        },
+        "cmip6:updated": {
+          "type": "string"
+        },
+        "cmip6:created": {
+          "type": "string"
         }
       },
       "patternProperties": {
-        "^(?!template:)": {
-          "$comment": "Above, change `template` to the prefix of this extension"
-        }
+        "^(?!cmip6:)": {}
       },
       "additionalProperties": false
     }
