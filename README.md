@@ -28,39 +28,39 @@ The fields in the table below can be used in these parts of STAC documents:
 - [ ] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
 - [ ] Links
 
-| Field Name                     | Type         | Description                                                                    |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------------ |
-| cmip6:access                   | array        | e.g. `["HTTPServer"]`                                                          |
-| cmip6:index_node               | string       | e.g. `null`                                                                    |
-| cmip6:latest                   | boolean      | e.g. `true`                                                                    |
-| cmip6:pid                      | string       | e.g. `null`                                                                    |
-| cmip6:replica                  | boolean      | e.g. `false`                                                                   |
-| cmip6:retracted                | boolean      | e.g. `false`                                                                   |
-| cmip6:instance_id              | string       | e.g. `CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731`   |
-| cmip6:citation_url             | string       | e.g. `http://cera-www.dkrz.de/WDCC/meta/CMIP6/CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731.json` |
-| cmip6:variable_long_name       | string       | e.g. `Sea Level Pressure`                                                      |
-| cmip6:variable_units           | string       | e.g. `Pa`                                                                      |
-| cmip6:cf_standard_name         | string       | e.g. `air_pressure_at_mean_sea_level`                                          |
-| cmip6:activity_id              | string       | e.g. `ScenarioMIP`                                                             |
-| cmip6:data_specs_version       | string       | e.g. `01.00.28`                                                                |
-| cmip6:experiment_title         | string       | e.g. `update of RCP4.5 based on SSP2`                                          |
-| cmip6:frequency                | string       | e.g. `mon`                                                                     |
-| cmip6:further_info_url         | string       | e.g. `https://furtherinfo.es-doc.org/CMIP6.UA.MCM-UA-1-0.ssp245.none.r1i1p1f2` |
-| cmip6:grid                     | string       | e.g. `lat-lon`                                                                 |
-| cmip6:grid_label               | string       | e.g. `gn`                                                                      |
-| cmip6:institution_id           | string       | e.g. `UA`                                                                      |
-| cmip6:mip_era                  | string       | e.g. `CMIP6`                                                                   |
-| cmip6:source_id                | string       | e.g. `MCM-UA-1-0`                                                              |
-| cmip6:source_type              | string       | e.g. `AOGCM`                                                                   |
-| cmip6:experiment_id            | string       | e.g. `ssp245`                                                                  |
-| cmip6:sub_experiment_id        | string       | e.g. `none`                                                                    |
-| cmip6:nominal_resolution       | string       | e.g. `250 km`                                                                  |
-| cmip6:table_id                 | string       | e.g. `Amon`                                                                    |
-| cmip6:variable_id              | string       | e.g. `psl`                                                                     |
-| cmip6:variant_label            | string       | e.g. `r1i1p1f2`                                                                |
-| cmip6:levels                   | string       | e.g. `null`                                                                    |
-| cmip6:updated                  | string       | e.g. `2024-02-20T19:28:19.804842Z`                                             |
-| cmip6:created                  | string       | e.g. `2024-02-20T19:28:19.804842Z`                                             |
+| Field Name               | Type    | Description                                                                                                               |
+|--------------------------|---------|---------------------------------------------------------------------------------------------------------------------------|
+| cmip6:access             | array   | e.g. `["HTTPServer"]`                                                                                                     |
+| cmip6:index_node         | string  | e.g. `null`                                                                                                               |
+| cmip6:latest             | boolean | e.g. `true`                                                                                                               |
+| cmip6:pid                | string  | e.g. `null`                                                                                                               |
+| cmip6:replica            | boolean | e.g. `false`                                                                                                              |
+| cmip6:retracted          | boolean | e.g. `false`                                                                                                              |
+| cmip6:instance_id        | string  | e.g. `CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731`                                              |
+| cmip6:citation_url       | string  | e.g. `http://cera-www.dkrz.de/WDCC/meta/CMIP6/CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731.json` |
+| cmip6:variable_long_name | string  | e.g. `Sea Level Pressure`                                                                                                 |
+| cmip6:variable_units     | string  | e.g. `Pa`                                                                                                                 |
+| cmip6:cf_standard_name   | string  | e.g. `air_pressure_at_mean_sea_level`                                                                                     |
+| cmip6:activity_id        | string  | e.g. `ScenarioMIP`                                                                                                        |
+| cmip6:data_specs_version | string  | e.g. `01.00.28`                                                                                                           |
+| cmip6:experiment_title   | string  | e.g. `update of RCP4.5 based on SSP2`                                                                                     |
+| cmip6:frequency          | string  | e.g. `mon`                                                                                                                |
+| cmip6:further_info_url   | string  | e.g. `https://furtherinfo.es-doc.org/CMIP6.UA.MCM-UA-1-0.ssp245.none.r1i1p1f2`                                            |
+| cmip6:grid               | string  | e.g. `lat-lon`                                                                                                            |
+| cmip6:grid_label         | string  | e.g. `gn`                                                                                                                 |
+| cmip6:institution_id     | string  | e.g. `UA`                                                                                                                 |
+| cmip6:mip_era            | string  | e.g. `CMIP6`                                                                                                              |
+| cmip6:source_id          | string  | e.g. `MCM-UA-1-0`                                                                                                         |
+| cmip6:source_type        | string  | e.g. `AOGCM`                                                                                                              |
+| cmip6:experiment_id      | string  | e.g. `ssp245`                                                                                                             |
+| cmip6:sub_experiment_id  | string  | e.g. `none`                                                                                                               |
+| cmip6:nominal_resolution | string  | e.g. `250 km`                                                                                                             |
+| cmip6:table_id           | string  | e.g. `Amon`                                                                                                               |
+| cmip6:variable_id        | string  | e.g. `psl`                                                                                                                |
+| cmip6:variant_label      | string  | e.g. `r1i1p1f2`                                                                                                           |
+| cmip6:levels             | string  | e.g. `null`                                                                                                               |
+| cmip6:updated            | string  | e.g. `2024-02-20T19:28:19.804842Z`                                                                                        |
+| cmip6:created            | string  | e.g. `2024-02-20T19:28:19.804842Z`                                                                                        |
 
 ### Additional Field Information
 
