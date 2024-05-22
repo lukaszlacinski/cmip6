@@ -1,7 +1,7 @@
 # CMIP6 Extension Specification
 
 - **Title:** CMIP6
-- **Identifier:** <https://cedadev.github.io/cmip6/v0.1.0/schema.json>
+- **Identifier:** <https://stac-extensions.github.io/cmip6/v1.0.0/schema.json>
 - **Field Name Prefix:** cmip6
 - **Scope:** Item
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal
