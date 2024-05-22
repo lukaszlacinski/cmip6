@@ -23,7 +23,7 @@
             "properties": {
               "allOf": [
                 {
-                  "$ref": "#/definitions/require_any"
+                  "$ref": "#/definitions/require_any_field"
                 },
                 {
                   "$ref": "#/definitions/fields"
