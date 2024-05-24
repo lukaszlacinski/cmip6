@@ -2,7 +2,7 @@
   "type": "Feature",
   "stac_version": "1.0.0",
   "stac_extensions": [
-    "https://cedadev.github.io/cmip6/v0.1.0/schema.json"
+    "https://stac-extensions.github.io/cmip6/v1.0.0/schema.json"
   ],
   "id": "CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731",
   "collection": "cmip6",
@@ -46,9 +46,7 @@
     "cmip6:access": [
       "HTTPServer"
     ],
-    "cmip6:index_node": null,
     "cmip6:latest": true,
-    "cmip6:pid": null,
     "cmip6:replica": false,
     "cmip6:retracted": false,
     "cmip6:instance_id": "CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731",
@@ -73,7 +71,7 @@
     "cmip6:table_id": "Amon",
     "cmip6:variable_id": "psl",
     "cmip6:variant_label": "r1i1p1f2",
-    "cmip6:levels": null,
+    "cmip6:levels": 0,
     "cmip6:updated": "2024-02-20T19:28:19.804842Z",
     "cmip6:created": "2024-02-20T19:28:19.804842Z"
   },

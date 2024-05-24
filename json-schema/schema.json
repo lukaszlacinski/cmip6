@@ -23,7 +23,7 @@
             "properties": {
               "allOf": [
                 {
-                  "$ref": "#/definitions/require_any"
+                  "$ref": "#/definitions/require_any_field"
                 },
                 {
                   "$ref": "#/definitions/fields"
@@ -53,37 +53,161 @@
     "require_any_field": {
       "$comment": "Please list all fields here so that we can force the existence of one of them in other parts of the schemas.",
       "anyOf": [
-        {"required": ["cmip6:access"]},
-        {"required": ["cmip6:index_node"]},
-        {"required": ["cmip6:latest"]},
-        {"required": ["cmip6:pid"]},
-        {"required": ["cmip6:replica"]},
-        {"required": ["cmip6:retracted"]},
-        {"required": ["cmip6:instance_id"]},
-        {"required": ["cmip6:citation_url"]},
-        {"required": ["cmip6:variable_long_name"]},
-        {"required": ["cmip6:variable_units"]},
-        {"required": ["cmip6:cf_standard_name"]},
-        {"required": ["cmip6:activity_id"]},
-        {"required": ["cmip6:data_specs_version"]},
-        {"required": ["cmip6:experiment_title"]},
-        {"required": ["cmip6:frequency"]},
-        {"required": ["cmip6:further_info_url"]},
-        {"required": ["cmip6:grid"]},
-        {"required": ["cmip6:grid_label"]},
-        {"required": ["cmip6:institution_id"]},
-        {"required": ["cmip6:mip_era"]},
-        {"required": ["cmip6:source_id"]},
-        {"required": ["cmip6:source_type"]},
-        {"required": ["cmip6:experiment_id"]},
-        {"required": ["cmip6:sub_experiment_id"]},
-        {"required": ["cmip6:nominal_resolution"]},
-        {"required": ["cmip6:table_id"]},
-        {"required": ["cmip6:variable_id"]},
-        {"required": ["cmip6:variant_label"]},
-        {"required": ["cmip6:levels"]},
-        {"required": ["cmip6:updated"]},
-        {"required": ["cmip6:created"]}
+        {
+          "required": [
+            "cmip6:access"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:index_node"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:latest"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:pid"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:replica"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:retracted"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:instance_id"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:citation_url"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:variable_long_name"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:variable_units"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:cf_standard_name"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:activity_id"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:data_specs_version"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:experiment_title"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:frequency"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:further_info_url"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:grid"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:grid_label"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:institution_id"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:mip_era"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:source_id"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:source_type"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:experiment_id"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:sub_experiment_id"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:nominal_resolution"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:table_id"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:variable_id"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:variant_label"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:levels"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:updated"
+          ]
+        },
+        {
+          "required": [
+            "cmip6:created"
+          ]
+        }
       ]
     },
     "fields": {
@@ -175,7 +299,7 @@
           "type": "string"
         },
         "cmip6:levels": {
-          "type": "string"
+          "type": "integer"
         },
         "cmip6:updated": {
           "type": "string"
