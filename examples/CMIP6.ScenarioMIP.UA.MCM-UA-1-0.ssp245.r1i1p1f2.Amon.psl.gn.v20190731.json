@@ -43,20 +43,20 @@
     "datetime": "2058-01-01T00:00:00Z",
     "start_datetime": "2015-01-17T00:00:00Z",
     "end_datetime": "2100-12-17T00:00:00Z",
-    "cmip6:access": [
+    "access": [
       "HTTPServer"
     ],
-    "cmip6:latest": true,
-    "cmip6:replica": false,
-    "cmip6:retracted": false,
-    "cmip6:instance_id": "CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731",
-    "cmip6:citation_url": "http://cera-www.dkrz.de/WDCC/meta/CMIP6/CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731.json",
+    "latest": true,
+    "replica": false,
+    "retracted": false,
+    "instance_id": "CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731",
+    "citation_url": "http://cera-www.dkrz.de/WDCC/meta/CMIP6/CMIP6.ScenarioMIP.UA.MCM-UA-1-0.ssp245.r1i1p1f2.Amon.psl.gn.v20190731.json",
     "cmip6:variable_long_name": "Sea Level Pressure",
     "cmip6:variable_units": "Pa",
-    "cmip6:cf_standard_name": "air_pressure_at_mean_sea_level",
+    "cf_standard_name": "air_pressure_at_mean_sea_level",
     "cmip6:activity_id": "ScenarioMIP",
     "cmip6:data_specs_version": "01.00.28",
-    "cmip6:experiment_title": "update of RCP4.5 based on SSP2",
+    "cmip6:experiment": "update of RCP4.5 based on SSP2",
     "cmip6:frequency": "mon",
     "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.UA.MCM-UA-1-0.ssp245.none.r1i1p1f2",
     "cmip6:grid": "lat-lon",
@@ -71,9 +71,9 @@
     "cmip6:table_id": "Amon",
     "cmip6:variable_id": "psl",
     "cmip6:variant_label": "r1i1p1f2",
-    "cmip6:levels": 0,
-    "cmip6:updated": "2024-02-20T19:28:19.804842Z",
-    "cmip6:created": "2024-02-20T19:28:19.804842Z"
+    "levels": 0,
+    "updated": "2024-02-20T19:28:19.804842Z",
+    "created": "2024-02-20T19:28:19.804842Z"
   },
   "links": [
     {
