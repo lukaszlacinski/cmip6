@@ -23,7 +23,7 @@ prefixed with `cmip6`.
 The fields in the table below can be used in these parts of STAC documents:
 
 - [ ] Catalogs
-- [ ] Collections
+- [x] Collections
 - [x] Item Properties (incl. Summaries in Collections)
 - [ ] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
 - [ ] Links
