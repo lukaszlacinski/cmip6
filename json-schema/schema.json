@@ -3,54 +3,61 @@
   "$id": "https://stac-extensions.github.io/cmip6/v1.0.0/schema.json#",
   "title": "CMIP6 Extension",
   "description": "STAC CMIP6 Extension for STAC Items and STAC Collection Summaries.",
+  "type": "object",
+  "required": [
+    "stac_extensions"
+  ],
+  "properties": {
+    "stac_extensions": {
+      "type": "array",
+      "contains": {
+        "const": "https://stac-extensions.github.io/cmip6/v1.0.0/schema.json"
+      }
+    }
+  },
   "oneOf": [
     {
       "$comment": "This is the schema for STAC Items.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/stac_extensions"
-        },
-        {
-          "type": "object",
-          "required": [
-            "type",
-            "properties"
-          ],
-          "properties": {
-            "type": {
-              "const": "Feature"
-            },
-            "properties": {
-              "allOf": [
-                {
-                  "$ref": "#/definitions/require_any_field"
-                },
-                {
-                  "$ref": "#/definitions/fields"
-                }
-              ]
-            }
-          }
-        }
-      ]
-    }
-  ],
-  "definitions": {
-    "stac_extensions": {
       "type": "object",
       "required": [
-        "stac_extensions"
+        "type",
+        "properties"
       ],
       "properties": {
-        "stac_extensions": {
-          "type": "array",
-          "contains": {
-            "const": "https://stac-extensions.github.io/cmip6/v1.0.0/schema.json"
-          }
+        "type": {
+          "const": "Feature"
+        },
+        "properties": {
+          "allOf": [
+            {
+              "$ref": "#/definitions/require_any"
+            },
+            {
+              "$ref": "#/definitions/fields"
+            }
+          ]
         }
       }
     },
-    "require_any_field": {
+    {
+      "$comment": "This is the schema for STAC Collections, or more specifically only Collection Summaries in this case. By default, only checks the existence of the properties, but not the schema of the summaries.",
+      "type": "object",
+      "required": [
+        "type",
+        "summaries"
+      ],
+      "properties": {
+        "type": {
+          "const": "Collection"
+        },
+        "summaries": {
+          "$ref": "#/definitions/require_any"
+        }
+      }
+    }
+  ],
+  "definitions": {
+    "require_any": {
       "$comment": "Please list all fields here so that we can force the existence of one of them in other parts of the schemas.",
       "anyOf": [
         {
