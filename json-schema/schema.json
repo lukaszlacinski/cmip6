@@ -11,7 +11,7 @@
     "stac_extensions": {
       "type": "array",
       "contains": {
-        "const": "https://stac-extensions.github.io/cmip6/v0.2.0/schema.json"
+        "const": "https://stac-extensions.github.io/cmip6/v1.0.0/schema.json"
       }
     }
   },
