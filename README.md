@@ -28,39 +28,38 @@ The fields in the table below can be used in these parts of STAC documents:
 - [ ] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
 - [ ] Links
 
-| Field Name                 | Type    | Description                                                                                                               |
-|----------------------------|---------|---------------------------------------------------------------------------------------------------------------------------|
-| cmip6:activity_id          | string  | e.g. `ScenarioMIP`                                                                                                        |
-| cmip6:data_specs_version   | string  | e.g. `01.00.28`                                                                                                           |
-| cmip6:frequency            | string  | e.g. `mon`                                                                                                                |
-| cmip6:further_info_url     | string  | e.g. `https://furtherinfo.es-doc.org/CMIP6.UA.MCM-UA-1-0.ssp245.none.r1i1p1f2`                                            |
-| cmip6:grid                 | string  | e.g. `lat-lon`                                                                                                            |
-| cmip6:grid_label           | string  | e.g. `gn`                                                                                                                 |
-| cmip6:institution          | string  | e.g.                                                                                                                      |
-| cmip6:institution_id       | string  | e.g. `UA`                                                                                                                 |
-| cmip6:mip_era              | string  | e.g. `CMIP6`                                                                                                              |
-| cmip6:source               | string  | e.g.                                                                                                                      |
-| cmip6:source_id            | string  | e.g. `MCM-UA-1-0`                                                                                                         |
-| cmip6:source_type          | string  | e.g. `AOGCM`                                                                                                              |
-| cmip6:experiment           | string  | e.g.                                                                                                                      |
-| cmip6:experiment_id        | string  | e.g. `ssp245`                                                                                                             |
-| cmip6:sub_experiment       | string  | e.g.                                                                                                                      |
-| cmip6:sub_experiment_id    | string  | e.g. `none`                                                                                                               |
-| cmip6:nominal_resolution   | string  | e.g. `250 km`                                                                                                             |
-| cmip6:table_id             | string  | e.g. `Amon`                                                                                                               |
-| cmip6:variable_id          | string  | e.g. `psl`                                                                                                                |
-| cmip6:variant_label        | string  | e.g.                                                                                                                      |
-| cmip6:Conventions          | string  | e.g.                                                                                                                      |
-| cmip6:creation_date        | string  | e.g.                                                                                                                      |
-| cmip6:forcing_index        | integer | e.g.                                                                                                                      |
-| cmip6:initialization_index | integer | e.g.                                                                                                                      |
-| cmip6:license              | string  | e.g.                                                                                                                      |
-| cmip6:physics_index        | integer | e.g.                                                                                                                      |
-| cmip6:realization_index    | integer | e.g.                                                                                                                      |
-| cmip6:product              | string  | e.g.                                                                                                                      |
-| cmip6:realm                | string  | e.g.                                                                                                                      |
-| cmip6:tracking_id          | string  | e.g.                                                                                                                      |
-
+| Field Name                 | Type    | Description                                                                    |
+|----------------------------|---------|--------------------------------------------------------------------------------|
+| cmip6:activity_id          | string  | e.g. `ScenarioMIP`                                                             |
+| cmip6:data_specs_version   | string  | e.g. `01.00.28`                                                                |
+| cmip6:frequency            | string  | e.g. `mon`                                                                     |
+| cmip6:further_info_url     | string  | e.g. `https://furtherinfo.es-doc.org/CMIP6.UA.MCM-UA-1-0.ssp245.none.r1i1p1f2` |
+| cmip6:grid                 | string  | e.g. `lat-lon`                                                                 |
+| cmip6:grid_label           | string  | e.g. `gn`                                                                      |
+| cmip6:institution          | string  | e.g.                                                                           |
+| cmip6:institution_id       | string  | e.g. `UA`                                                                      |
+| cmip6:mip_era              | string  | e.g. `CMIP6`                                                                   |
+| cmip6:source               | string  | e.g.                                                                           |
+| cmip6:source_id            | string  | e.g. `MCM-UA-1-0`                                                              |
+| cmip6:source_type          | string  | e.g. `AOGCM`                                                                   |
+| cmip6:experiment           | string  | e.g.                                                                           |
+| cmip6:experiment_id        | string  | e.g. `ssp245`                                                                  |
+| cmip6:sub_experiment       | string  | e.g.                                                                           |
+| cmip6:sub_experiment_id    | string  | e.g. `none`                                                                    |
+| cmip6:nominal_resolution   | string  | e.g. `250 km`                                                                  |
+| cmip6:table_id             | string  | e.g. `Amon`                                                                    |
+| cmip6:variable_id          | string  | e.g. `psl`                                                                     |
+| cmip6:variant_label        | string  | e.g.                                                                           |
+| cmip6:Conventions          | string  | e.g.                                                                           |
+| cmip6:creation_date        | string  | e.g.                                                                           |
+| cmip6:forcing_index        | integer | e.g.                                                                           |
+| cmip6:initialization_index | integer | e.g.                                                                           |
+| cmip6:license              | string  | e.g.                                                                           |
+| cmip6:physics_index        | integer | e.g.                                                                           |
+| cmip6:realization_index    | integer | e.g.                                                                           |
+| cmip6:product              | string  | e.g.                                                                           |
+| cmip6:realm                | string  | e.g.                                                                           |
+| cmip6:tracking_id          | string  | e.g.                                                                           |
 
 All contributions are subject to the
 [STAC Specification Code of Conduct](https://github.com/radiantearth/stac-spec/blob/master/CODE_OF_CONDUCT.md).
